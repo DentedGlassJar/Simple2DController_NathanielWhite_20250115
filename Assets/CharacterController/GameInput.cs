@@ -203,7 +203,7 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
         public void SetCallbacks(IPlayerActions instance)
         {
             foreach (var item in m_Wrapper.m_PlayerActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
+            UnregisterCallbacks(item);
             m_Wrapper.m_PlayerActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
